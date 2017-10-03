@@ -1,0 +1,102 @@
+@media (min-width: 1250px) {
+  .container {
+    width: 1230px; }
+    .container_small {
+      width: 1110px; } }
+
+@media (max-width: 1249px) {
+  .services__img {
+    width: 280px;
+    height: 280px; } }
+
+@media (max-width: 991px) {
+  .telephone.middle {
+    display: block; }
+  .language {
+    display: block;
+    text-align: right;
+    margin-left: 0; }
+  .logo_header {
+    margin-left: 55px; }
+  .header__contacts {
+    padding-top: 5px; }
+  .about-img {
+    text-align: center; }
+  .section {
+    padding-top: 40px; }
+    .section_portfolio {
+      padding-bottom: 40px; }
+  .portfolio-img {
+    height: 145px; }
+  .services__item {
+    width: 32%; }
+  .services__img {
+    width: 180px;
+    height: 180px; }
+  .contacts__info {
+    margin-bottom: 20px; }
+  .section_contacts {
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .visible-xs {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+  .logo_header {
+    margin-left: 0; }
+  .block-xs {
+    display: block; }
+  .language {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center; }
+  .top-panel {
+    text-align: center; }
+    .top-panel .telephone {
+      margin-bottom: 15px; }
+  .social_top {
+    padding-top: 0; }
+  .nav__menu li {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 10px; }
+  h1,
+  .h1 {
+    font-size: 30px; }
+  h2,
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  h3,
+  .h3 {
+    font-size: 20px; }
+  h4,
+  .h4 {
+    font-size: 16px; }
+  .contacts-item {
+    text-align: left;
+    font-size: 16px; }
+  .contacts-item__text {
+    padding-left: 10px; }
+  .services__item {
+    width: 49%; }
+  .services__name {
+    height: 50px; }
+  .btn {
+    font-size: 16px; }
+  .portfolio {
+    padding-left: 0;
+    padding-right: 0; }
+  .portfolio-img {
+    height: 190px; } }
+
+@media (max-width: 450px) {
+  .services__item {
+    width: 100%; }
+  .services__img {
+    width: 200px;
+    height: 200px; } }
