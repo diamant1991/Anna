@@ -5,3 +5,4 @@
 //= ../../bower_components/owl.carousel/dist/owl.carousel.js
 //= partials/bxslider.js
 //= partials/fancybox.js
+//= partials/jquery.inputmask.bundle.js

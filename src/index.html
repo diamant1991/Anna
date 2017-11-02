@@ -31,7 +31,7 @@
             </div>
             <div class="header__contacts">
               <div class="telephone middle">
-                +38 099 974 55 07
+                <a href="tel:+380999745507">+38 099 974 55 07</a>
               </div>
               <div class="social social_top visible-xs middle">
                 <a href="#" class="btn-link btn-link_top btn-link_vk"></a>
@@ -39,22 +39,27 @@
                 <a href="#" class="btn-link btn-link_top btn-link_inst"></a>
               </div>
               <div class="language middle">
-                <a href="#" class="btn-link btn-link_top btn-link_uk"></a>
-                <a href="#" class="btn-link btn-link_top btn-link_rus"></a>
-                <a href="#" class="btn-link btn-link_top btn-link_en"></a>
+                <a href="#" class="btn-link btn-link_lang btn-link_uk active"></a>
+                <a href="#" class="btn-link btn-link_lang btn-link_rus"></a>
+                <a href="#" class="btn-link btn-link_lang btn-link_en"></a>
+              </div>
+              <div class="navbar-toggle middle visible-xs">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <div class="container">
           <ul class="nav__menu clearfix">
-            <li><a href="#">главная</a></li>
-            <li><a href="#">о нас</a></li>
-            <li><a href="#">портфолио</a></li>
-            <li><a href="#">услуги</a></li>
-            <li><a href="#">контакты</a></li>
+            <li><a href="#" class="scroll-link">главная</a></li>
+            <li><a href="#about" class="scroll-link">о нас</a></li>
+            <li><a href="#portfolio" class="scroll-link">портфолио</a></li>
+            <li><a href="#services" class="scroll-link">услуги</a></li>
+            <li><a href="#contacts" class="scroll-link">контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -71,7 +76,7 @@
         </div>
       </div>
     </div>
-    <section class="section">
+    <section class="section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-12 col-xs-12 pull-right text-block">
@@ -91,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="section section_portfolio">
+    <section class="section section_portfolio" id="portfolio">
       <div class="parallax">
         <div class="parallax-wrapp">
           <div class="container">
@@ -101,22 +106,34 @@
                 <div class="portfolio-carousel owl-carousel owl-theme hidden-xs">
                   <div class="item">
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf1.jpg)"></div>
+                      <a href="img/portf1.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf1.jpg)"></div>
+                      </a>
                     </div>
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf2.jpg)"></div>
+                      <a href="img/portf2.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf2.jpg)"></div>
+                      </a>
                     </div>
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf3.jpg)"></div>
+                      <a href="img/portf3.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf3.jpg)"></div>
+                      </a>
                     </div>
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf4.jpg)"></div>
+                      <a href="img/portf4.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf4.jpg)"></div>
+                      </a>
                     </div>
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf5.jpg)"></div>
+                      <a href="img/portf5.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf5.jpg)"></div>
+                      </a>
                     </div>
                     <div class="col-sm-4">
-                      <div class="portfolio-img" style="background-image: url(img/portf6.jpg)"></div>
+                      <a href="img/portf6.jpg" rel="gal" class="fancybox">
+                        <div class="portfolio-img" style="background-image: url(img/portf6.jpg)"></div>
+                      </a>
                     </div>
                   </div>
                   <div class="item">
@@ -173,10 +190,10 @@
       </div>
       
     </section>
-    <section class="section section_contacts">
+    <section class="section section_contacts" id="contacts">
       <div class="container container_small">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 hidden-xs">
             <div class="contacts__info">
               <div class="logo logo_contacts">
                 <img src="img/logo-large.png" alt="">
@@ -191,13 +208,17 @@
                 <span class="table-cell">
                   <span class="btn-link btn-link_tel"></span>
                 </span>
-                <span class="table-cell contacts-item__text">+380999745507</span>
+                <span class="table-cell contacts-item__text">
+                  <a href="tel:+380999745507">+380999745507</a>
+                </span>
               </div>
               <div class="contacts-item">
                 <span class="table-cell">
                   <span class="btn-link btn-link_post"></span>
                 </span>
-                <span class="table-cell contacts-item__text">Івано-Франківськ,Львів.Киев </span>
+                <span class="table-cell contacts-item__text">
+                 <a href="mailto:Івано-Франківськ,Львів.Киев">Івано-Франківськ,Львів.Киев </a>
+                </span>
               </div>
               <div class="contacts-item">
                 <a href="#" class="btn-link btn-link_contacts btn-link_vk"></a>
@@ -213,7 +234,7 @@
                 <input type="text" class="form-control" placeholder="Ваше имя">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Ваш E-mail">
+                <input type="text" class="form-control form-control_tel" placeholder="Ваш телефон">
               </div>
               <div class="form-group">
                 <textarea class="form-control" placeholder="Немного о себе"></textarea>
@@ -226,33 +247,37 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" id="services">
       <div class="container container_small">
         <h2>Услуги</h2>
         <div class="services">
           <div class="services__item">
-            <div class="services__img" style="background-image: url(img/serv1.jpg)"></div>
-            <div class="services__name">Свадебная сьемка</div>
+            <a href="#">
+              <div class="services__img" style="background-image: url(img/serv1.jpg)"></div>
+            </a>
+            <div class="services__name">
+              <a href="#">Свадебная сьемка</a>
+            </div>
             <a href="#" class="services__price btn">2000 Р / час</a>
           </div>
           <div class="services__item">
-            <div class="services__img" style="background-image: url(img/serv2.jpg)"></div>
-            <div class="services__name">Семейная сьемка</div>
+            <a href="#"><div class="services__img" style="background-image: url(img/serv2.jpg)"></div></a>
+            <div class="services__name"><a href="#">Семейная сьемка</a></div>
             <a href="#" class="services__price btn">2000 Р / час</a>
           </div>
           <div class="services__item">
-            <div class="services__img" style="background-image: url(img/serv3.jpg)"></div>
-            <div class="services__name">Подарочные сертификаты</div>
+            <a href="#"><div class="services__img" style="background-image: url(img/serv3.jpg)"></div></a>
+            <div class="services__name"><a href="#">Подарочные сертификаты</a></div>
             <a href="#" class="services__price btn">2000 Р / час</a>
           </div>
           <div class="services__item">
-            <div class="services__img" style="background-image: url(img/serv4.jpg)"></div>
-            <div class="services__name">Индивидуальная сьемка</div>
+            <a href="#"><div class="services__img" style="background-image: url(img/serv4.jpg)"></div></a>
+            <div class="services__name"><a href="#">Индивидуальная сьемка</a></div>
             <a href="#" class="services__price btn">2000 Р / час</a>
           </div>
           <div class="services__item">
-            <div class="services__img" style="background-image: url(img/serv5.jpg)"></div>
-            <div class="services__name">Репортажная съемка</div>
+            <a href="#"><div class="services__img" style="background-image: url(img/serv5.jpg)"></div></a>
+            <div class="services__name"><a href="#">Репортажная съемка</a></div>
             <a href="#" class="services__price btn">2000 Р / час</a>
           </div>
         </div>
@@ -270,22 +295,22 @@
       <div class="container">
         <div class="photo-carousel owl-carousel owl-theme">
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo1.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo1.jpg)"></div></a>
           </div>
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo2.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo2.jpg)"></div></a>
           </div>
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo3.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo3.jpg)"></div></a>
           </div>
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo4.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo4.jpg)"></div></a>
           </div>
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo5.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo5.jpg)"></div></a>
           </div>
           <div class="item">
-            <div class="photo-img" style="background-image: url(img/photo1.jpg)"></div>
+            <a href="#"><div class="photo-img" style="background-image: url(img/photo1.jpg)"></div></a>
           </div>
         </div>
       </div>
@@ -297,7 +322,7 @@
         <img src="img/footer-logo.png" alt="">
       </a>
       <div class="telephone telephone_bottom">
-        +38 099 974 55 07
+        <a href="tel:+380999745507">+38 099 974 55 07</a>
       </div>
       <div class="social social_bottom">
         <a href="#" class="btn-link btn-link_vk btn-link_bottom"></a>

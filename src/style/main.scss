@@ -119,6 +119,16 @@ img{
 		height: 32px;
 		background: url(../img/post.png)no-repeat;
 	}
+	&_lang{
+		background-position: 50%;
+		border-radius: 50%;
+		border: 2px solid transparent;
+
+		&.active,
+		&:hover{
+			border-color: #000;
+		}
+	}
 }
 .logo{
 	&_header{
@@ -144,6 +154,10 @@ img{
 }
 .telephone{
 	font-size: 18px;
+
+	a{
+		color: #000;
+	}
 
 	&_bottom{
 		margin: 15px 0;
@@ -234,6 +248,34 @@ img{
 		background: url(../img/right-arrow.png)no-repeat;
 	}
 }
+.photo-carousel{
+	padding-left: 25px;
+	padding-right: 25px;
+
+	.owl-prev,
+	.owl-next{
+		width: 17px;
+		height: 28px;
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		margin-top: -9px;
+		opacity: 0.6;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	.owl-prev{
+		background: url(../img/left-arrow.png)no-repeat;
+		left: 0;
+	}
+	.owl-next{
+		right: 0;
+		background: url(../img/right-arrow.png)no-repeat;
+	}
+}
 .portfolio-img{
 	height: 215px;
 	background-repeat: no-repeat;
@@ -275,6 +317,10 @@ img{
 
 	&__text{
 		padding-left: 25px;
+
+		a{
+			color: #000;
+		}
 	}
 
 	+ .contacts-item{
@@ -323,6 +369,14 @@ textarea.form-control{
 	&__name{
 		height: 50px;
 		font-size: 18px;
+		
+		a{
+			color: #000;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
 	}
 }
 .photo-img{
@@ -357,5 +411,19 @@ textarea.form-control{
 		&.fixed{
 			position: fixed;
 		}
+	}
+}
+.navbar-toggle{
+	cursor: pointer;
+	margin-left: 5px;
+}
+.icon-bar{
+	width: 25px;
+	height: 3px;
+	background: #000;
+	display: block;
+
+	+ .icon-bar{
+		margin-top: 4px;
 	}
 }

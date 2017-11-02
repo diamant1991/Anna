@@ -9,6 +9,18 @@
     width: 280px;
     height: 280px; } }
 
+@media (min-width: 992px) {
+  .wrapper {
+    padding-top: 132px; }
+  .header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 20px; } }
+
 @media (max-width: 991px) {
   .telephone.middle {
     display: block; }
@@ -47,8 +59,17 @@
     display: none !important; }
   .logo_header {
     margin-left: 0; }
+  .nav {
+    display: none; }
   .block-xs {
     display: block; }
+  .mobile-portfolio-carousel {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .portfolio .owl-prev {
+    left: 5px; }
+  .portfolio .owl-next {
+    right: 5px; }
   .language {
     display: inline-block;
     margin-left: 10px;
@@ -61,9 +82,8 @@
     padding-top: 0; }
   .nav__menu li {
     float: none;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px 10px; }
+    display: block;
+    margin: 15px 0; }
   h1,
   .h1 {
     font-size: 30px; }

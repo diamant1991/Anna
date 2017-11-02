@@ -1,12 +1,10 @@
-$('.dropdown-btn').click(function(e) {
+$('.navbar-toggle').click(function(e) {
   e.preventDefault()
-  var menu = $(this).next()
+  var menu = $('#nav')
   if(menu.is(":hidden")){
-    $(this).addClass('active')
     menu.slideDown(250)
   }
   else{
-    $(this).removeClass('active')
     menu.slideUp(250)
   }
 });
@@ -36,8 +34,8 @@ $('.portfolio-carousel').owlCarousel({
 })
 $('.mobile-portfolio-carousel').owlCarousel({
   loop:true,
-  margin:0,
-  nav:false,
+  margin:10,
+  nav: true,
   dots: false,
   responsive:{
     0:{
@@ -79,26 +77,45 @@ $('.photo-carousel').owlCarousel({
   }
 })
 
-$('.parallax').each(function() {
-  var parallaxPos, winPosMain, parallaxItem;
-  var itemHeight = $(this).find('.parallax-wrapp').height();
-  $(this).css('height', itemHeight + 'px');
+$(document).ready(function() {
+  $('.parallax').each(function() {
+    var parallaxPos, winPosMain, parallaxItem;
+    var itemHeight = $(this).find('.parallax-wrapp').height();
+    $(this).css('height', itemHeight + 'px');
 
-  parallaxPos = $(this).find('.parallax-wrapp').offset().top;
-  parallaxItem = $(this).find('.parallax-wrapp')
-  
-  $(window).scroll(function() {
-    winPosMain = $(window).scrollTop();
-    
-    if (winPosMain >= parallaxPos) {
-      parallaxItem.addClass('fixed')
-    } 
-    else {
-      parallaxItem.removeClass('fixed')
+    parallaxPos = $(this).find('.parallax-wrapp').offset().top;
+    parallaxItem = $(this).find('.parallax-wrapp')
+
+    if(window.matchMedia('(min-width: 992px)').matches){
+      $(window).scroll(function() {
+        winPosMain = $(window).scrollTop();
+        
+        if (winPosMain >= parallaxPos) {
+          parallaxItem.addClass('fixed')
+        } 
+        else {
+          parallaxItem.removeClass('fixed')
+        }
+      });
     }
   });
+  $(".fancybox").fancybox({
+    padding : 0,
+    openEffect  : 'elastic',
+    closeEffect : 'elastic',
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+  
+  $('.form-control_tel').inputmask("+38 (999) 999 99 99");
+
+  $(".scroll-link").click(function () {
+    elementClick = $(this).attr("href")
+    destination = $(elementClick).offset().top -132;
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+    return false;
+  });
 });
-
-
-
-
